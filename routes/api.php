@@ -11,7 +11,7 @@ Route::get('products', [ProductController::class, 'products']);
 Route::post('add-product', [ProductController::class, 'add_product']);
 //Orders
 Route::get('orders', [OrderController::class, 'orders']);
-//Orders update
+//Order update
 Route::put('order-update', [OrderController::class, 'order_update']);
 
 Route::fallback(function () {
