@@ -14,6 +14,7 @@ class SkateboardSeeder extends Seeder
      */
     public function run()
     {
+        //Data az olduğu üçün faker istifadə etmədim
         $skateboards = array(
             'Element', 'Plan B', 'Girl', 'Zero', 'Creature',
             'Blind', 'Santa Cruz', 'Almost', 'Chocolate', 'Flip',
