@@ -72,8 +72,8 @@ class ProductController extends Controller
             return response()->json($validator->errors(), 400);
         }
 
-        /* required_if sadecə null variantı üçün işlədi.
-           Əgər email ve phone hər ikisini yazmayıb post edirsə bu post success olurdu.
+        /* required_if i null-a bərabər verdiyim üçün sadecə null variantı üçün işləyirdi.
+           Əgər email ve phone hər ikisini yazmayıb ( formda bildirmirdise ) post edirsə bu post success olurdu.
            Onun üçün aşağıdakı şərti verdim */
 
         if (!$request->email and !$request->phone) {
